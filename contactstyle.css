@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(images/img1.jpg);
+}
+.container{
+    width: 80%;
+    margin: 50px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    margin-bottom: 10px;
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+.container p{
+    margin-bottom: 20px;
+}
+.contact-box{
+    background: #ffffff;
+    display: flex;
+    margin:auto
+}
+
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+    color: green;
+}
+    
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background-color: green;
+    color:#ffffff
+}
+
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+
+.input-row .input-group{
+    flex-basis: 45%;
+
+}
+
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid green;
+    outline: none;
+    padding-bottom: 5px;
+}
+
+textarea{
+    width: 100%;
+    border: 1px solid green;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+label{
+    margin-bottom: 6px;
+    display: block;
+    color: green;
+}
+
+button{
+    background: green;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: opx 5px 15px 0px rgba(28, 0,181, 0.3);
+}
+
+.contact-left h3{
+    color: green;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.contact-right h3{
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+tr td:first-child{
+    padding-right: 50px;
+}
+
+tr td{
+    padding-top: 20px ;
+}
+
+table{
+    color: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    width: 1170px;
+    margin: auto;
+}
+
+header{
+    
+    
+    display: flex;
+
+}
+
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+    position: relative;
+}
+
+.nav-area li{
+    float: left;
+    display: inline block;
+}
+
+.nav-area li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+
+}
+
+.nav-area :hover{
+    background:green;
+    columns: #333333;
+    border-radius: 5px;
+}
+
+.logo img{
+    width: 100px;
+    height: auto;
+    float:left;
+}
+
+
+
+
+.header{
+    display: flex;
+}
+
+
+
+

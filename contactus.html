@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="contactstyle.css">
+        <title>Contact Us</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="wrapper">
+                
+                <div class="logo">
+                    <img src="logo.png" alt="">
+                </div>
+        
+                <ul class="nav-area">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="ourexpert.html">Our Expert</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            
+            </div>
+        
+        </header>
+
+        <div class="container">
+            <h1>Connect With Us</h1>
+            <p>We would love to respond to your queries and help you succeed.<br>
+                Feel free to get in touch with us.</p>
+        
+
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h3>Send Your Request</h3>
+
+                    <form action=method="POST" autocomplete="off" name="google-sheet">
+
+                        <div class="input-row">
+                            <div class="input-group">
+                                
+                                <label for="">Name</label>
+                                <input type="text" class="form-control" name="name" id="exampleinputemail1" aria-describedby="emailHelp" placeholder="Enter Name" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="">Email</label>
+                                <input type="email" class="form-control" name="email" id="exampleinputemail1" aria-describedby="emailHelp" placeholder="Enter Email" required>
+                            </div>
+                        </div>
+
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="">Phone</label>
+                                <input type="text" class="form-control" name="phone" id="exampleinputemail1" aria-describedby="emailHelp" placeholder="Enter Phone No." required>
+                            </div>
+                            <div class="input-group">
+                                <label for="">Subject</label>
+                                <input type="text" class="form-control" name="subject" id="exampleinputemail1" aria-describedby="emailHelp" placeholder="Enter your SUBJECT" required>
+                            </div>
+                        </div>
+                        
+                        <label for="">Message</label>
+                        <textarea class="form-control" name="message" id="" rows="5" placeholder="Enter Your Message" required ></textarea>
+
+                        <button type="submit" class="btn btn-primary">SEND</button>
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <h3>Reach Us</h3>
+                    <table>
+                        <tr>
+                            <td>Email</td>
+                            <td>amarashaassociates@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td>+91 98739 37768</td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td>YP 50 A<br>
+                            Pitam Pura<br>
+                            Delhi 110034
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>  
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzfrd_uJ_rDjEfGaL9zoBt64ikm_fXrRsbtH4yCR_hj7S4iAGFcebch/exec'
+            const form = document.forms['google-sheet']
+
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(Response => alert("Thanks for Contacting us..! We will Contact you Soon... "))
+                .catch(Error => cosole.Error('Error!', error.message))
+    
+            })
+        </script>
+
+        <script> src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"</script>
+        <script>src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"</script>
+
+    </body>
+</html>
